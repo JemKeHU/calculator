@@ -1,0 +1,59 @@
+#container {
+    background-color: gray;
+    height: 200px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    border-radius: 10px;
+}
+
+#buttons {
+    display: block;
+}
+
+#buttons > button {
+    font-size: 16px;
+    width: 75px;
+    border-radius: 5px;
+    border: none;
+    margin: 2px;
+}
+
+#buttons > button:hover {
+    background-color: lightgray;
+}
+
+#buttons > button:active {
+    background-color: dimgray;
+}
+
+#buttons > .operation {
+    background-color: rgb(207, 150, 52);
+    font-size: 16px;
+    width: 75px;
+    border-radius: 5px;
+    border: none;
+    margin: 2px;
+}
+
+#buttons > .operation:hover {
+    background-color: rgb(148, 111, 46);
+}
+
+#buttons > .operation:active {
+    background-color: rgb(101, 76, 34);
+}
+
+#field {
+    background-color: whitesmoke;
+    height: 25px;
+    width: 230px;
+    border-radius: 5px;
+    margin: 6px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 5px;
+}
