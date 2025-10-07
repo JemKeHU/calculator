@@ -15,6 +15,9 @@ Basic math operations:
 - Backspace button to delete the last entered character
 - Clean and simple graphical interface
 
+If you know python math function pow, you can use it more, just open documentation [**Math**](https://docs.python.org/3/library/math.html)
+Example: pow(2, 4) = 16
+
 Instant results when pressing `=`  
 Error handling (e.g. division by zero)  
 Custom window icon and fixed size  
