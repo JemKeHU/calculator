@@ -13,6 +13,11 @@ Basic math operations:
 - ➖ Subtraction  
 - ✖ Multiplication  
 - ➗ Division  
+- Basic arithmetic operations: `+`, `-`, `*`, `/`
+- Trigonometric functions: `sin`, `cos`, `tan`
+- Parentheses for complex expressions: `(` and `)`
+- Backspace button to delete the last entered character
+- Clean and simple graphical interface
 
 Instant results when pressing `=`  
 Error handling (e.g. division by zero)  
