@@ -24,7 +24,7 @@ Custom window icon and fixed size
 ## Usage
 
 1. Download Python from https://www.python.org/downloads/
-2. Clone this repository: git clone https://github.com/yourusername/tkinter-calculator.git && cd tkinter-calculator
+2. Clone this repository: git clone https://github.com/yourusername/tkinter-calculator.git && cd calculator
   then type in your terminal: python main.py
   if you on windows you can just run this file through your code editor (VSCode, PyCharm) for example
 
