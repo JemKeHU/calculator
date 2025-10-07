@@ -8,11 +8,7 @@ This project is perfect for beginners who want to learn how to create desktop GU
 ## Features
 
 Clean and minimal interface  
-Basic math operations:
-- ➕ Addition  
-- ➖ Subtraction  
-- ✖ Multiplication  
-- ➗ Division  
+Basic math operations:  
 - Basic arithmetic operations: `+`, `-`, `*`, `/`
 - Trigonometric functions: `sin`, `cos`, `tan`
 - Parentheses for complex expressions: `(` and `)`
