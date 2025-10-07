@@ -1,28 +1,45 @@
 import tkinter as tk
 
+
 def main():
     main_root = tk.Tk()
-    main_root.title("Test1")
+    main_root.title("Calculator")
     CALCULATOR_IMAGE = tk.PhotoImage(file="calculator_photo.png")
     main_root.iconphoto(True, CALCULATOR_IMAGE)
 
-    def button_clicked(i=1):
-        if i <= 10:
-            label2.config(text=f"Number {i} is displayed!")
-            main_root.after(1000, button_clicked, i + 1)
+    def button_click(symbol):
+        if symbol == "=":
+            try:
+                result = eval(text_box.get())
+                text_box.delete(0, tk.END)
+                text_box.insert(tk.END, result)
+            except Exception:
+                text_box.delete(0, tk.END)
+                text_box.insert(tk.END, "Error")
+        else:
+            text_box.insert(tk.END, symbol)
 
-    label1 = tk.Label(main_root, text="Test message!")
-    label1.pack()
+    buttons = [
+        ('7', 1, 0), ('8', 1, 1), ('9', 1, 2), ('/', 1, 3),
+        ('4', 2, 0), ('5', 2, 1), ('6', 2, 2), ('*', 2, 3),
+        ('1', 3, 0), ('2', 3, 1), ('3', 3, 2), ('-', 3, 3),
+        ('0', 4, 0), ('.', 4, 1), ('=', 4, 2), ('+', 4, 3),
+    ]
 
-    button1 = tk.Button(main_root, text="Stop", width=25, command=main_root.destroy)
-    button1.pack()
+    text_box = tk.Entry(main_root, font=("Arial", 16), bd=5)
+    text_box.grid(row=0, column=0, columnspan=4, padx=10, pady=10, sticky="we")
 
-    button2 = tk.Button(main_root, text="Click me!", width=25, command=button_clicked)
-    button2.pack()
-    label2 = tk.Label(main_root, text="Number \"kal\" is displayed!")
-    label2.pack()
+    for (text, row, col) in buttons:
+        tk.Button(
+            main_root,
+            text=text,
+            width=7,
+            height=3,
+            command=lambda t=text: button_click(t)
+        ).grid(row=row, column=col)
 
-    main_root.geometry("340x240")
+    main_root.geometry("370x320")
+    main_root.resizable(False, False)
     main_root.mainloop()
 
     return 0
